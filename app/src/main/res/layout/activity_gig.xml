@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Gig">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="gig or mb"
+        android:gravity="center_horizontal"
+        android:id="@+id/et_gig"
+        android:textColorHint="@color/black"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="gig to mb"
+        android:id="@+id/btn_gigToMg"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mb to gig"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:id="@+id/btn_mbToGig"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="28dp"
+        android:id="@+id/tv_show_gig"/>
+
+</LinearLayout>

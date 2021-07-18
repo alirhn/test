@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dollar">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="dollar o rial"
+        android:gravity="center_horizontal"
+        android:id="@+id/et_dollar"
+        android:textColorHint="@color/black"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dollar to rial"
+        android:id="@+id/btn_dollarToRial"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rial to dollar"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:id="@+id/btn_rialToDollar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="28dp"
+        android:id="@+id/tv_show_dollar"/>
+</LinearLayout>

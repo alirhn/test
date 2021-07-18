@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#461B81"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+ <androidx.appcompat.widget.Toolbar
+     android:layout_width="match_parent"
+     android:layout_height="56dp"
+     android:background="@color/purple_700">
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerInParent="true"
+             android:text="telegram"
+             android:textStyle="bold"
+             android:textColor="@color/white"/>
+
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:src="@drawable/ic_baseline_menu_24"
+             android:layout_centerVertical="true"
+             app:tint="@color/white" />
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:src="@drawable/ic_baseline_search_24"
+             android:layout_centerVertical="true"
+             app:tint="@color/white" />
+     </RelativeLayout>
+ </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et"
+        android:hint="..."
+        android:gravity="center"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="show"
+        android:id="@+id/btnShowww"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add"
+        android:id="@+id/btnAdd"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tvshow"/>
+</LinearLayout>

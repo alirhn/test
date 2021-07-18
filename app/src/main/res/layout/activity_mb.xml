@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mb">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="mb or bit"
+        android:gravity="center_horizontal"
+        android:id="@+id/et_megabyte"
+        android:textColorHint="@color/black"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mg to bit"
+        android:id="@+id/btn_mgToBit"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bit to mg"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:id="@+id/btn_bitToMg"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="28dp"
+        android:id="@+id/tv_show_mb"/>
+</LinearLayout>

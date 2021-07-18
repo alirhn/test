@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MTF</string>
+    <string name="question1">زبان رسمی برنامه نویسی اندروید کدام است ؟</string>
+    <string name="question2">اديتور رسمي گوكل براي توسعه اندوريد كدام است ؟</string>
+    <string name="question3">كدام يك از نوع داده هاي زير عددي نميباشد ؟</string>
+    <string name="question4">براي رفتن يه بك اكتيويتي يا برنامه ي ديگ از چه كلاسي استفاده ميشود ؟</string>
+    <string name="question5">كدام گزينه با بقيه متفاوت است ؟</string>
+    <string name="submit">ثبت و خروج از امتحان</string>
+</resources>
