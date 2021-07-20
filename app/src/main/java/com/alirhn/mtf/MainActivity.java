@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -26,6 +27,8 @@ List<String> list = new ArrayList<>();
 EditText editText;
 Button add , show;
 TextView textView;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +45,7 @@ TextView textView;
             public void onClick(View view) {
                 list.add(editText.getText().toString().trim());
                 editText.setText("");
+                //getting text
             }
         });
 
@@ -50,6 +54,7 @@ TextView textView;
             public void onClick(View view) {
                 for (int i = 0 ; i < list.size() ; i++){
                     textView.append(list.get(i) + "\n");
+                    Log.i("log" , "hello github");
                 }
             }
         });
