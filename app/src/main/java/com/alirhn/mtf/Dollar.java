@@ -6,40 +6,25 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.ToggleButton;
 
 public class Dollar extends AppCompatActivity {
-Button dollar , rial;
-EditText editText;
-TextView textView;
+ToggleButton toggleButton;
+
+    Switch switch1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dollar);
 
-        dollar = findViewById(R.id.btn_dollarToRial);
-        rial = findViewById(R.id.btn_rialToDollar);
-        editText = findViewById(R.id.et_dollar);
-        textView = findViewById(R.id.tv_show_dollar);
 
-
-        dollar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                int number = Integer.parseInt(editText.getText().toString().trim());
-                float result = number * 24000;
-                textView.setText(String.valueOf("ریال : "+String.valueOf(result)));
-            }
-        });
-
-        rial.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                int number = Integer.parseInt(editText.getText().toString().trim());
-                float result = number/24000;
-                textView.setText( "دلار : " + String.valueOf(result));
-            }
-        });
+        toggleButton = findViewById(R.id.tgl);
+        toggleButton.setTextOff("roshan");
+        toggleButton.setTextOn("khamush");
+        switch1 = findViewById(R.id.switch1);
+        switch1.isChecked();
 
     }
 }

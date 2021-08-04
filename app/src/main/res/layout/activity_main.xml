@@ -3,67 +3,89 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:background="#461B81"
+    android:padding="4dp"
     android:backgroundTint="@color/white"
-    android:gravity="center_horizontal"
+    android:weightSum="3"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:weightSum="3"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/btn1"/>
 
- <androidx.appcompat.widget.Toolbar
-     android:layout_width="match_parent"
-     android:layout_height="56dp"
-     android:background="@color/purple_700">
-     <RelativeLayout
-         android:layout_width="match_parent"
-         android:layout_height="match_parent">
-         <TextView
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:layout_centerInParent="true"
-             android:text="telegram"
-             android:textStyle="bold"
-             android:textColor="@color/white"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/btn2"/>
 
-         <ImageView
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:layout_alignParentLeft="true"
-             android:src="@drawable/ic_baseline_menu_24"
-             android:layout_centerVertical="true"
-             app:tint="@color/white" />
-         <ImageView
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:layout_alignParentRight="true"
-             android:src="@drawable/ic_baseline_search_24"
-             android:layout_centerVertical="true"
-             app:tint="@color/white" />
-     </RelativeLayout>
- </androidx.appcompat.widget.Toolbar>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/btn3"/>
+    </LinearLayout>
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/et"
-        android:hint="..."
-        android:gravity="center"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="show"
-        android:id="@+id/btnShowww"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="add"
-        android:id="@+id/btnAdd"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:weightSum="3"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/btn4"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/btn5"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/btn6"/>
+    </LinearLayout>
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:layout_gravity="center_horizontal"
-        android:id="@+id/tvshow"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:weightSum="3"
+        android:layout_marginLeft="4dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/btn7"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/btn8"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/btn9"/>
+    </LinearLayout>
 </LinearLayout>
